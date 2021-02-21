@@ -1,0 +1,6 @@
+module Pods_ArdXBoilerplate_ArdXBoilerplateTests {
+  umbrella header "Pods-ArdXBoilerplate-ArdXBoilerplateTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

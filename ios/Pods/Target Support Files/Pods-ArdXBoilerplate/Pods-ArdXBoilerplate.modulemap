@@ -1,0 +1,6 @@
+module Pods_ArdXBoilerplate {
+  umbrella header "Pods-ArdXBoilerplate-umbrella.h"
+
+  export *
+  module * { export * }
+}
