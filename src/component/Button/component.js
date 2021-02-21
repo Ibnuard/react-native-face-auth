@@ -9,7 +9,7 @@ const CustomButton = ({
     invers = false,
     disabled = false,
     flat = false,
-    color = Colors.PRIMARY,
+    color,
     showLoading = false,
     icon = null,
     onPress = null,
@@ -31,9 +31,9 @@ const CustomButton = ({
             loading={showLoading}
             icon={icon}
             onPress={onPress}
-            contentStyle={style}
+            contentStyle={[styles.baseSize, style]}
             uppercase={uppercase}
-            labelStyle={labelStyle}>
+            labelStyle={[styles.labelStyle, labelStyle]}>
             {title}
         </Button>
     )

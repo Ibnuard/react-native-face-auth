@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.ardxboilerplate"
+3    package="com.ardxboilerplate.faceauth"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -11,58 +11,98 @@
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 11-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/debug/AndroidManifest.xml:5:5-77
 11-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/debug/AndroidManifest.xml:5:22-75
-12    <uses-permission android:name="android.permission.INTERNET" />
+12    <uses-permission android:name="android.permission.INTERNET" /> <!-- Required -->
 12-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:4:5-67
 12-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:4:22-64
-13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->[com.facebook.flipper:flipper:0.54.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:16:5-76
-13-->[com.facebook.flipper:flipper:0.54.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:16:22-73
-14
-15    <application
-15-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:6:5-25:19
-16        android:name="com.ardxboilerplate.faceauth.MainApplication"
-16-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:7:7-38
-17        android:allowBackup="false"
-17-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:11:7-34
-18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/AndroidManifest.xml:24:18-86
-19        android:debuggable="true"
-20        android:icon="@mipmap/ic_launcher"
-20-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:9:7-41
-21        android:label="@string/app_name"
-21-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:8:7-39
-22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:10:7-52
-23        android:theme="@style/AppTheme"
-23-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:12:7-38
-24        android:usesCleartextTraffic="true" >
-24-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/debug/AndroidManifest.xml:7:18-53
-25        <activity
-25-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:13:7-23:18
-26            android:name="com.ardxboilerplate.faceauth.MainActivity"
-26-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:14:9-37
-27            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-27-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:16:9-86
-28            android:label="@string/app_name"
-28-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:15:9-41
-29            android:launchMode="singleTask"
-29-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:17:9-40
-30            android:windowSoftInputMode="adjustResize" >
-30-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:18:9-51
-31            <intent-filter>
-31-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:19:9-22:25
-32                <action android:name="android.intent.action.MAIN" />
-32-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:20:13-65
-32-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:20:21-62
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:21:13-73
-34-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:21:23-70
-35            </intent-filter>
-36        </activity>
-37        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-37-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:24:7-84
-37-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:24:17-81
-38    </application>
-39
-40</manifest>
+13    <uses-permission android:name="android.permission.CAMERA" /> <!-- Include this only if you are planning to use the camera roll -->
+13-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:6:5-65
+13-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:6:22-62
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:9:5-80
+14-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:9:22-77
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Include this only if you are planning to use the microphone for video recording -->
+15-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:10:5-81
+15-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:10:22-78
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:13:5-70
+16-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:13:22-68
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->[com.facebook.flipper:flipper:0.54.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:16:5-76
+17-->[com.facebook.flipper:flipper:0.54.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:16:22-73
+18
+19    <uses-feature
+19-->[:react-native-camera] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
+20        android:name="android.hardware.camera"
+20-->[:react-native-camera] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:12:9-47
+21        android:required="false" />
+21-->[:react-native-camera] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:13:9-33
+22    <uses-feature
+22-->[:react-native-camera] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
+23        android:name="android.hardware.camera.autofocus"
+23-->[:react-native-camera] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:15:9-57
+24        android:required="false" />
+24-->[:react-native-camera] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:16:9-33
+25
+26    <application
+26-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:15:5-34:19
+27        android:name="com.ardxboilerplate.faceauth.MainApplication"
+27-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:16:7-38
+28        android:allowBackup="false"
+28-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:20:7-34
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/AndroidManifest.xml:24:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher"
+31-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:18:7-41
+32        android:label="@string/app_name"
+32-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:17:7-39
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:19:7-52
+34        android:theme="@style/AppTheme"
+34-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:21:7-38
+35        android:usesCleartextTraffic="true" >
+35-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/debug/AndroidManifest.xml:7:18-53
+36        <activity
+36-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:22:7-32:18
+37            android:name="com.ardxboilerplate.faceauth.MainActivity"
+37-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:23:9-37
+38            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+38-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:25:9-86
+39            android:label="@string/app_name"
+39-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:24:9-41
+40            android:launchMode="singleTask"
+40-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:26:9-40
+41            android:windowSoftInputMode="adjustResize" >
+41-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:27:9-51
+42            <intent-filter>
+42-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:28:9-31:25
+43                <action android:name="android.intent.action.MAIN" />
+43-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:29:13-65
+43-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:29:21-62
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:30:13-73
+45-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:30:23-70
+46            </intent-filter>
+47        </activity>
+48        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+48-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:33:7-84
+48-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:33:17-81
+49        <activity
+49-->[com.google.android.gms:play-services-base:16.0.1] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/bbdd8e015f3073f59907b156970eb265/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+50            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+50-->[com.google.android.gms:play-services-base:16.0.1] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/bbdd8e015f3073f59907b156970eb265/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+51            android:exported="false"
+51-->[com.google.android.gms:play-services-base:16.0.1] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/bbdd8e015f3073f59907b156970eb265/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+52            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+52-->[com.google.android.gms:play-services-base:16.0.1] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/bbdd8e015f3073f59907b156970eb265/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+53
+54        <meta-data
+54-->[com.google.android.gms:play-services-basement:16.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/bb39daa8cf5f9abb27fd2dfea569f534/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
+55            android:name="com.google.android.gms.version"
+55-->[com.google.android.gms:play-services-basement:16.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/bb39daa8cf5f9abb27fd2dfea569f534/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58
+56            android:value="@integer/google_play_services_version" />
+56-->[com.google.android.gms:play-services-basement:16.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/bb39daa8cf5f9abb27fd2dfea569f534/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
+57    </application>
+58
+59</manifest>
