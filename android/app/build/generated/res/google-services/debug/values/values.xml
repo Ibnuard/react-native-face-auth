@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">534100696689-dshr6s7isq8hcrtu0fqaqr5d4tbs3k9d.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">534100696689</string>
+    <string name="google_api_key" translatable="false">AIzaSyCv3HuCxKkwBcy17mHYbZd9TQm6ZAgP-0U</string>
+    <string name="google_app_id" translatable="false">1:534100696689:android:2d06ada94fcf7f70ad85d0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCv3HuCxKkwBcy17mHYbZd9TQm6ZAgP-0U</string>
+    <string name="google_storage_bucket" translatable="false">faceauth-fc2e1.appspot.com</string>
+    <string name="project_id" translatable="false">faceauth-fc2e1</string>
+</resources>

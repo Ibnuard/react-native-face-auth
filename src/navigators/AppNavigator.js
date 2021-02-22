@@ -7,8 +7,10 @@ import CustomAppBar from '../component/AppBar/component'
 import AuthScreen from '../screen/AuthScreen/screen'
 import RegisterScreen from '../screen/RegisterScreen/screen'
 import FaceRegistrationScreen from '../screen/FaceRegistration/screen'
+import FacePreviewModal from '../screen/FacePreviewModal/screen'
 
 const Stack = createStackNavigator()
+const RootStack = createStackNavigator()
 
 export const AppNavigator = () => {
     return (
@@ -87,4 +89,28 @@ export const AppNavigator = () => {
             />
         </Stack.Navigator>
     )
+}
+
+export const RootStackScreen = () => {
+    return (
+        <RootStack.Navigator mode="modal">
+            <RootStack.Screen
+                name="Main"
+                component={AppNavigator}
+                options={{
+                    animationEnabled: true,
+                    animationTypeForReplace: 'push',
+                    headerShown: false
+                }}
+            />
+            <RootStack.Screen
+                name="PreviewModal"
+                component={FacePreviewModal}
+                options={{
+                    animationEnabled: true,
+                    animationTypeForReplace: 'push',
+                    headerShown: false
+                }} />
+        </RootStack.Navigator>
+    );
 }

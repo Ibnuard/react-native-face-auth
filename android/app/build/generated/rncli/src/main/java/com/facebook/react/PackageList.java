@@ -15,6 +15,10 @@ import java.util.ArrayList;
 import com.reactnativecommunity.imageeditor.ImageEditorPackage;
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
+// @react-native-firebase/app
+import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
+// @react-native-firebase/ml
+import io.invertase.firebase.ml.ReactNativeFirebaseMLPackage;
 // react-native-camera
 import org.reactnative.camera.RNCameraPackage;
 // react-native-gesture-handler
@@ -74,6 +78,8 @@ public class PackageList {
       new MainReactPackage(mConfig),
       new ImageEditorPackage(),
       new RNCMaskedViewPackage(),
+      new ReactNativeFirebaseAppPackage(),
+      new ReactNativeFirebaseMLPackage(),
       new RNCameraPackage(),
       new RNGestureHandlerPackage(),
       new ReanimatedPackage(),

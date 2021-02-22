@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "534100696689",
+    "project_id": "faceauth-fc2e1",
+    "storage_bucket": "faceauth-fc2e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534100696689:android:2d06ada94fcf7f70ad85d0",
+        "android_client_info": {
+          "package_name": "com.ardxboilerplate.faceauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534100696689-dshr6s7isq8hcrtu0fqaqr5d4tbs3k9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv3HuCxKkwBcy17mHYbZd9TQm6ZAgP-0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534100696689-dshr6s7isq8hcrtu0fqaqr5d4tbs3k9d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

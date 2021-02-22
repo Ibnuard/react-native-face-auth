@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppNavigator } from './navigators/AppNavigator'
+import { AppNavigator, RootStackScreen } from './navigators/AppNavigator'
 //theme
 import {
     DarkTheme as PaperDarkTheme,
@@ -56,7 +56,7 @@ const AppStack = () => {
         <PreferencesContext.Provider value={preferences}>
             <PaperProvider theme={theme}>
                 <NavigationContainer theme={theme}>
-                    <AppNavigator />
+                    <RootStackScreen />
                 </NavigationContainer>
             </PaperProvider>
         </PreferencesContext.Provider>
