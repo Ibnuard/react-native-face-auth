@@ -876,6 +876,10 @@
         "source": "/Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/d2974ac36bf11b6e048576ef94732df8/appcompat-1.1.0/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/build/intermediates/res/merged/debug/xml_provider_paths.xml.flat",
+        "source": "/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/rn-fetch-blob/android/build/intermediates/packaged_res/debug/xml/provider_paths.xml"
+    },
+    {
         "merged": "/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_light.xml.flat",
         "source": "/Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/d2974ac36bf11b6e048576ef94732df8/appcompat-1.1.0/res/color/abc_primary_text_material_light.xml"
     },

@@ -1,5 +1,7 @@
 import axios from 'axios'
 import { API_METHOD } from '../utils/Common'
+import { createFormData } from '../utils/Utils'
+import RNFetchBlob from 'rn-fetch-blob'
 
 
 //custom fetch / base
@@ -50,4 +52,21 @@ export const fetchMultiApi = async (request = []) => {
     }).catch((error) => {
         return error
     })
+}
+
+export const fetchUploadImage = (url, photo) => {
+    const body = { name: 'file', filename: 'avatar-png.jpeg', type: 'image/jpeg', data: RNFetchBlob.wrap(photo) }
+    console.log('Uploading image....')
+    RNFetchBlob.fetch('POST', url, {
+        'x-api-key': "1a1ca103-8df6-4543-b082-5cdd71c461f4",
+        'Content-Type': 'multipart/form-data',
+    }, [body])
+        .then((resp) => resp.json())
+        .then((res) => {
+            console.log(JSON.stringify(res))
+        })
+        .catch((err) => {
+            // ...
+            console.log('Res Err: ' + err)
+        })
 }

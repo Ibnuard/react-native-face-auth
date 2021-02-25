@@ -43,152 +43,182 @@
 23-->[:react-native-camera] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
 24        android:name="android.hardware.camera.autofocus"
 24-->[:react-native-camera] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:15:9-57
-25        android:required="false" />
+25        android:required="false" /> <!-- Required to access Google Play Licensing -->
 25-->[:react-native-camera] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:16:9-33
-26
-27    <application
-27-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:15:5-34:19
-28        android:name="com.ardxboilerplate.faceauth.MainApplication"
-28-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:16:7-38
-29        android:allowBackup="false"
-29-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:20:7-34
-30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-30-->[androidx.core:core:1.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/9a4658afade2e57b9a640b6674c28496/core-1.1.0/AndroidManifest.xml:24:18-86
-31        android:debuggable="true"
-32        android:icon="@mipmap/ic_launcher"
-32-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:18:7-41
-33        android:label="@string/app_name"
-33-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:17:7-39
-34        android:roundIcon="@mipmap/ic_launcher_round"
-34-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:19:7-52
-35        android:theme="@style/AppTheme"
-35-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:21:7-38
-36        android:usesCleartextTraffic="true" >
-36-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/debug/AndroidManifest.xml:7:18-53
-37        <activity
-37-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:22:7-32:18
-38            android:name="com.ardxboilerplate.faceauth.MainActivity"
-38-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:23:9-37
-39            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-39-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:25:9-86
-40            android:label="@string/app_name"
-40-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:24:9-41
-41            android:launchMode="singleTask"
-41-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:26:9-40
-42            android:windowSoftInputMode="adjustResize" >
-42-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:27:9-51
-43            <intent-filter>
-43-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:28:9-31:25
-44                <action android:name="android.intent.action.MAIN" />
-44-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:29:13-65
-44-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:29:21-62
-45
-46                <category android:name="android.intent.category.LAUNCHER" />
-46-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:30:13-73
-46-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:30:23-70
-47            </intent-filter>
-48        </activity>
-49        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-49-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:33:7-84
-49-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:33:17-81
-50
-51        <service
-51-->[com.google.firebase:firebase-ml-vision:24.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/92252da3f4f68245f7dcb1d50a6fef45/firebase-ml-vision-24.1.0/AndroidManifest.xml:9:9-15:19
-52            android:name="com.google.firebase.components.ComponentDiscoveryService"
-52-->[com.google.firebase:firebase-ml-vision:24.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/92252da3f4f68245f7dcb1d50a6fef45/firebase-ml-vision-24.1.0/AndroidManifest.xml:10:13-84
-53            android:directBootAware="true"
-53-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
-54            android:exported="false" >
-54-->[com.google.firebase:firebase-ml-vision:24.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/92252da3f4f68245f7dcb1d50a6fef45/firebase-ml-vision-24.1.0/AndroidManifest.xml:11:13-37
-55            <meta-data
-55-->[com.google.firebase:firebase-ml-vision:24.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/92252da3f4f68245f7dcb1d50a6fef45/firebase-ml-vision-24.1.0/AndroidManifest.xml:12:13-14:85
-56                android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar"
-56-->[com.google.firebase:firebase-ml-vision:24.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/92252da3f4f68245f7dcb1d50a6fef45/firebase-ml-vision-24.1.0/AndroidManifest.xml:13:17-108
-57                android:value="com.google.firebase.components.ComponentRegistrar" />
-57-->[com.google.firebase:firebase-ml-vision:24.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/92252da3f4f68245f7dcb1d50a6fef45/firebase-ml-vision-24.1.0/AndroidManifest.xml:14:17-82
-58            <meta-data
-58-->[com.google.firebase:firebase-ml-model-interpreter:22.0.4] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/8e16c3839fde4eeb2fed1d575e33500a/firebase-ml-model-interpreter-22.0.4/AndroidManifest.xml:12:13-14:85
-59                android:name="com.google.firebase.components:com.google.firebase.ml.custom.CustomModelRegistrar"
-59-->[com.google.firebase:firebase-ml-model-interpreter:22.0.4] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/8e16c3839fde4eeb2fed1d575e33500a/firebase-ml-model-interpreter-22.0.4/AndroidManifest.xml:13:17-113
-60                android:value="com.google.firebase.components.ComponentRegistrar" />
-60-->[com.google.firebase:firebase-ml-model-interpreter:22.0.4] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/8e16c3839fde4eeb2fed1d575e33500a/firebase-ml-model-interpreter-22.0.4/AndroidManifest.xml:14:17-82
-61            <meta-data
-61-->[com.google.firebase:firebase-ml-common:22.1.2] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/e2363e7cf785e953b3de72fe34ddac3d/firebase-ml-common-22.1.2/AndroidManifest.xml:11:13-13:85
-62                android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar"
-62-->[com.google.firebase:firebase-ml-common:22.1.2] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/e2363e7cf785e953b3de72fe34ddac3d/firebase-ml-common-22.1.2/AndroidManifest.xml:12:17-117
-63                android:value="com.google.firebase.components.ComponentRegistrar" />
-63-->[com.google.firebase:firebase-ml-common:22.1.2] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/e2363e7cf785e953b3de72fe34ddac3d/firebase-ml-common-22.1.2/AndroidManifest.xml:13:17-82
-64            <meta-data
-64-->[com.google.firebase:firebase-installations:16.3.5] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/02feabdb06cce2054be1f0639284f227/firebase-installations-16.3.5/AndroidManifest.xml:18:13-20:85
-65                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-65-->[com.google.firebase:firebase-installations:16.3.5] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/02feabdb06cce2054be1f0639284f227/firebase-installations-16.3.5/AndroidManifest.xml:19:17-127
-66                android:value="com.google.firebase.components.ComponentRegistrar" />
-66-->[com.google.firebase:firebase-installations:16.3.5] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/02feabdb06cce2054be1f0639284f227/firebase-installations-16.3.5/AndroidManifest.xml:20:17-82
-67            <!--
-68                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
-69                clients to use it as well, by defining this registrar in their own core/common library.
-70            -->
-71            <meta-data
-71-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
-72                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
-72-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
-73                android:value="com.google.firebase.components.ComponentRegistrar" />
-73-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
-74        </service>
-75
-76        <activity
-76-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:23:9-27:75
-77            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-77-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:24:13-93
-78            android:excludeFromRecents="true"
-78-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:25:13-46
-79            android:exported="false"
-79-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:26:13-37
-80            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-80-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:27:13-72
-81        <!--
-82            Service handling Google Sign-In user revocation. For apps that do not integrate with
-83            Google Sign-In, this service will never be started.
-84        -->
-85        <service
-85-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:33:9-37:51
-86            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-86-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:34:13-89
-87            android:exported="true"
-87-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:35:13-36
-88            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-88-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:36:13-107
-89            android:visibleToInstantApps="true" />
-89-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:37:13-48
-90
-91        <activity
-91-->[com.google.android.gms:play-services-base:17.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/c4fb6b3249f446fdb0995f0c1cd7339f/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-92            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-92-->[com.google.android.gms:play-services-base:17.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/c4fb6b3249f446fdb0995f0c1cd7339f/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
-93            android:exported="false"
-93-->[com.google.android.gms:play-services-base:17.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/c4fb6b3249f446fdb0995f0c1cd7339f/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-94            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-94-->[com.google.android.gms:play-services-base:17.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/c4fb6b3249f446fdb0995f0c1cd7339f/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-95
-96        <provider
-96-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
-97            android:name="com.google.firebase.provider.FirebaseInitProvider"
-97-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
-98            android:authorities="com.ardxboilerplate.faceauth.firebaseinitprovider"
-98-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
-99            android:directBootAware="true"
-99-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
-100            android:exported="false"
-100-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
-101            android:initOrder="100" />
-101-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
-102
-103        <meta-data
-103-->[com.google.android.gms:play-services-basement:17.1.1] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/edc1c0d46cf064951fc257827254c2ae/jetified-play-services-basement-17.1.1/AndroidManifest.xml:23:9-25:69
-104            android:name="com.google.android.gms.version"
-104-->[com.google.android.gms:play-services-basement:17.1.1] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/edc1c0d46cf064951fc257827254c2ae/jetified-play-services-basement-17.1.1/AndroidManifest.xml:24:13-58
-105            android:value="@integer/google_play_services_version" />
-105-->[com.google.android.gms:play-services-basement:17.1.1] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/edc1c0d46cf064951fc257827254c2ae/jetified-play-services-basement-17.1.1/AndroidManifest.xml:25:13-66
-106    </application>
+26    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+26-->[:rn-fetch-blob] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-73
+26-->[:rn-fetch-blob] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-70
+27    <!--
+28         Required to keep CPU alive while downloading files
+29        (NOT to keep screen awake)
+30    -->
+31    <uses-permission android:name="android.permission.WAKE_LOCK" />
+31-->[:rn-fetch-blob] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:5-68
+31-->[:rn-fetch-blob] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:22-65
+32
+33    <application
+33-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:15:5-35:19
+34        android:name="com.ardxboilerplate.faceauth.MainApplication"
+34-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:16:7-38
+35        android:allowBackup="false"
+35-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:20:7-34
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/9a4658afade2e57b9a640b6674c28496/core-1.1.0/AndroidManifest.xml:24:18-86
+37        android:debuggable="true"
+38        android:icon="@mipmap/ic_launcher"
+38-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:18:7-41
+39        android:label="@string/app_name"
+39-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:17:7-39
+40        android:requestLegacyExternalStorage="true"
+40-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:22:7-50
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:19:7-52
+42        android:theme="@style/AppTheme"
+42-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:21:7-38
+43        android:usesCleartextTraffic="true" >
+43-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/debug/AndroidManifest.xml:7:18-53
+44        <activity
+44-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:23:7-33:18
+45            android:name="com.ardxboilerplate.faceauth.MainActivity"
+45-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:24:9-37
+46            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+46-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:26:9-86
+47            android:label="@string/app_name"
+47-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:25:9-41
+48            android:launchMode="singleTask"
+48-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:27:9-40
+49            android:windowSoftInputMode="adjustResize" >
+49-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:28:9-51
+50            <intent-filter>
+50-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:29:9-32:25
+51                <action android:name="android.intent.action.MAIN" />
+51-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:30:13-65
+51-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:30:21-62
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:31:13-73
+53-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:31:23-70
+54            </intent-filter>
+55        </activity>
+56        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+56-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:34:7-84
+56-->/Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/android/app/src/main/AndroidManifest.xml:34:17-81
+57
+58        <provider
+58-->[:rn-fetch-blob] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:9-44:20
+59            android:name="com.RNFetchBlob.Utils.FileProvider"
+59-->[:rn-fetch-blob] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-62
+60            android:authorities="com.ardxboilerplate.faceauth.provider"
+60-->[:rn-fetch-blob] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-60
+61            android:exported="false"
+61-->[:rn-fetch-blob] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-37
+62            android:grantUriPermissions="true" >
+62-->[:rn-fetch-blob] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-47
+63            <meta-data
+63-->[:rn-fetch-blob] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-43:58
+64                android:name="android.support.FILE_PROVIDER_PATHS"
+64-->[:rn-fetch-blob] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:17-67
+65                android:resource="@xml/provider_paths" />
+65-->[:rn-fetch-blob] /Users/ibnuputra/Library/Mobile Documents/com~apple~CloudDocs/Project/App/ardx-react-native-boilerplate/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:43:17-55
+66        </provider>
+67
+68        <service
+68-->[com.google.firebase:firebase-ml-vision:24.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/92252da3f4f68245f7dcb1d50a6fef45/firebase-ml-vision-24.1.0/AndroidManifest.xml:9:9-15:19
+69            android:name="com.google.firebase.components.ComponentDiscoveryService"
+69-->[com.google.firebase:firebase-ml-vision:24.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/92252da3f4f68245f7dcb1d50a6fef45/firebase-ml-vision-24.1.0/AndroidManifest.xml:10:13-84
+70            android:directBootAware="true"
+70-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
+71            android:exported="false" >
+71-->[com.google.firebase:firebase-ml-vision:24.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/92252da3f4f68245f7dcb1d50a6fef45/firebase-ml-vision-24.1.0/AndroidManifest.xml:11:13-37
+72            <meta-data
+72-->[com.google.firebase:firebase-ml-vision:24.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/92252da3f4f68245f7dcb1d50a6fef45/firebase-ml-vision-24.1.0/AndroidManifest.xml:12:13-14:85
+73                android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar"
+73-->[com.google.firebase:firebase-ml-vision:24.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/92252da3f4f68245f7dcb1d50a6fef45/firebase-ml-vision-24.1.0/AndroidManifest.xml:13:17-108
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-ml-vision:24.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/92252da3f4f68245f7dcb1d50a6fef45/firebase-ml-vision-24.1.0/AndroidManifest.xml:14:17-82
+75            <meta-data
+75-->[com.google.firebase:firebase-ml-model-interpreter:22.0.4] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/8e16c3839fde4eeb2fed1d575e33500a/firebase-ml-model-interpreter-22.0.4/AndroidManifest.xml:12:13-14:85
+76                android:name="com.google.firebase.components:com.google.firebase.ml.custom.CustomModelRegistrar"
+76-->[com.google.firebase:firebase-ml-model-interpreter:22.0.4] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/8e16c3839fde4eeb2fed1d575e33500a/firebase-ml-model-interpreter-22.0.4/AndroidManifest.xml:13:17-113
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-ml-model-interpreter:22.0.4] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/8e16c3839fde4eeb2fed1d575e33500a/firebase-ml-model-interpreter-22.0.4/AndroidManifest.xml:14:17-82
+78            <meta-data
+78-->[com.google.firebase:firebase-ml-common:22.1.2] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/e2363e7cf785e953b3de72fe34ddac3d/firebase-ml-common-22.1.2/AndroidManifest.xml:11:13-13:85
+79                android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar"
+79-->[com.google.firebase:firebase-ml-common:22.1.2] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/e2363e7cf785e953b3de72fe34ddac3d/firebase-ml-common-22.1.2/AndroidManifest.xml:12:17-117
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[com.google.firebase:firebase-ml-common:22.1.2] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/e2363e7cf785e953b3de72fe34ddac3d/firebase-ml-common-22.1.2/AndroidManifest.xml:13:17-82
+81            <meta-data
+81-->[com.google.firebase:firebase-installations:16.3.5] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/02feabdb06cce2054be1f0639284f227/firebase-installations-16.3.5/AndroidManifest.xml:18:13-20:85
+82                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+82-->[com.google.firebase:firebase-installations:16.3.5] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/02feabdb06cce2054be1f0639284f227/firebase-installations-16.3.5/AndroidManifest.xml:19:17-127
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[com.google.firebase:firebase-installations:16.3.5] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/02feabdb06cce2054be1f0639284f227/firebase-installations-16.3.5/AndroidManifest.xml:20:17-82
+84            <!--
+85                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+86                clients to use it as well, by defining this registrar in their own core/common library.
+87            -->
+88            <meta-data
+88-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
+89                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+89-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
+91        </service>
+92
+93        <activity
+93-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:23:9-27:75
+94            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+94-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:24:13-93
+95            android:excludeFromRecents="true"
+95-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:25:13-46
+96            android:exported="false"
+96-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:26:13-37
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+97-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:27:13-72
+98        <!--
+99            Service handling Google Sign-In user revocation. For apps that do not integrate with
+100            Google Sign-In, this service will never be started.
+101        -->
+102        <service
+102-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:33:9-37:51
+103            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+103-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:34:13-89
+104            android:exported="true"
+104-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:35:13-36
+105            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+105-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:36:13-107
+106            android:visibleToInstantApps="true" />
+106-->[com.google.android.gms:play-services-auth:19.0.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/13cc202fb0ecd1bae9cb4a6526cdc31e/play-services-auth-19.0.0/AndroidManifest.xml:37:13-48
 107
-108</manifest>
+108        <activity
+108-->[com.google.android.gms:play-services-base:17.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/c4fb6b3249f446fdb0995f0c1cd7339f/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+109            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+109-->[com.google.android.gms:play-services-base:17.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/c4fb6b3249f446fdb0995f0c1cd7339f/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+110            android:exported="false"
+110-->[com.google.android.gms:play-services-base:17.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/c4fb6b3249f446fdb0995f0c1cd7339f/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+111            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+111-->[com.google.android.gms:play-services-base:17.1.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/c4fb6b3249f446fdb0995f0c1cd7339f/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+112
+113        <provider
+113-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
+114            android:name="com.google.firebase.provider.FirebaseInitProvider"
+114-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
+115            android:authorities="com.ardxboilerplate.faceauth.firebaseinitprovider"
+115-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
+116            android:directBootAware="true"
+116-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
+117            android:exported="false"
+117-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
+118            android:initOrder="100" />
+118-->[com.google.firebase:firebase-common:19.5.0] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/519105f615ef112623ec9757de5de250/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
+119
+120        <meta-data
+120-->[com.google.android.gms:play-services-basement:17.1.1] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/edc1c0d46cf064951fc257827254c2ae/jetified-play-services-basement-17.1.1/AndroidManifest.xml:23:9-25:69
+121            android:name="com.google.android.gms.version"
+121-->[com.google.android.gms:play-services-basement:17.1.1] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/edc1c0d46cf064951fc257827254c2ae/jetified-play-services-basement-17.1.1/AndroidManifest.xml:24:13-58
+122            android:value="@integer/google_play_services_version" />
+122-->[com.google.android.gms:play-services-basement:17.1.1] /Users/ibnuputra/.gradle/caches/transforms-2/files-2.1/edc1c0d46cf064951fc257827254c2ae/jetified-play-services-basement-17.1.1/AndroidManifest.xml:25:13-66
+123    </application>
+124
+125</manifest>

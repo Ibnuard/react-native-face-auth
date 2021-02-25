@@ -11,13 +11,13 @@ const RegisterScreen = ({ navigation }) => {
 
             <TextInput
                 style={{ marginTop: 20 }}
-                label="Masukan nama + uid"
+                label="Masukan nomor hp + nama"
                 value={name}
                 mode={'outlined'}
                 onChangeText={name => setName(name)}
             />
 
-            <Button mode={'contained'} onPress={() => navigation.navigate('FaceRegister')} style={{ marginTop: 20 }}>
+            <Button mode={'contained'} onPress={() => navigation.navigate('FaceRegister', { subject: name })} style={{ marginTop: 20 }}>
                 <Text>Daftarkan Wajah</Text>
             </Button>
         </View>
