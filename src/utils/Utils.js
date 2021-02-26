@@ -26,13 +26,8 @@ export const createFormData = (photo, body) => {
 
 export const contentUritoFiles = async (uri) => {
     let RNFS = require('react-native-fs')
+    const destPath = `${RNFS.TemporaryDirectoryPath}/zipay/test`
+    await RNFS.copyFile(uri, destPath)
 
-    console.log('urs : ' + uri)
-
-    if (uri?.startsWith('content://')) {
-        const destPath = `${RNFS.TemporaryDirectoryPath}/zipay/test`
-        console.log('py : ' + JSON.stringify(destPath))
-    } else {
-        console.log('ga pas')
-    }
+    return `files:///${destPath}`
 }

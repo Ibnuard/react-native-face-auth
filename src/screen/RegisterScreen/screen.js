@@ -17,7 +17,7 @@ const RegisterScreen = ({ navigation }) => {
                 onChangeText={name => setName(name)}
             />
 
-            <Button mode={'contained'} onPress={() => navigation.navigate('FaceRegister', { subject: name })} style={{ marginTop: 20 }}>
+            <Button disabled={name.length < 5} mode={'contained'} onPress={() => navigation.navigate('FaceRegister', { subject: name.toLowerCase() })} style={{ marginTop: 20 }}>
                 <Text>Daftarkan Wajah</Text>
             </Button>
         </View>

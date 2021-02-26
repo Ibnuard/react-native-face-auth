@@ -13,6 +13,7 @@ import axios from 'axios';
 import styles from './styles'
 import { contentUritoFiles } from '../../utils/Utils';
 import { fetchUploadImage } from '../../api/ApiCall';
+import { BASE_URL } from '../../api/Api';
 
 const FaceRegistrationScreen = ({ navigation, route }) => {
     const cameraRef = React.useRef(null)
@@ -22,8 +23,13 @@ const FaceRegistrationScreen = ({ navigation, route }) => {
 
     const [step, setStep] = React.useState(0)
     const [faceResult, setFaceResult] = React.useState(null)
-    const [faceStatus, setFaceStatus] = React.useState('Belum Ada')
+    const [faceStatus, setFaceStatus] = React.useState('Posisikan wajah sesuai tanda yang tersedia.')
     const [ready, setReady] = React.useState(0)
+    const [button, setButton] = React.useState(false)
+    const [confirmButton, setConfirmButton] = React.useState(false)
+    const [isLoading, setIsLoading] = React.useState(false)
+
+    const [faceID, setFaceID] = React.useState('')
 
     const stepCaption = ['Step 1. Daftarkan wajah', 'Step 2. Verifikasi wajah', 'Step 3. Verifikasi wajah untuk mengkonfirmasi']
 
@@ -31,7 +37,7 @@ const FaceRegistrationScreen = ({ navigation, route }) => {
     const sheetRef = React.useRef(null)
 
     React.useEffect(() => {
-        console.log(JSON.stringify(faceResult))
+        //console.log(JSON.stringify(faceResult))
         const minX = 90
         const maxX = 145
         const minY = 30
@@ -46,15 +52,17 @@ const FaceRegistrationScreen = ({ navigation, route }) => {
 
         if (faceResult) {
             if (faceResult?.origin?.x >= minX && faceResult?.origin?.x <= maxX && faceResult?.origin?.y >= minY && faceResult?.origin?.y <= maxY && faceResult?.size?.height >= minHeight && faceResult?.size?.height <= maxHeight && faceResult?.size?.width >= minWidth && faceResult?.size?.width <= maxWidth) {
-                console.log('Good Position')
-                setFaceStatus('Tahan posisi ini selama 3 detik untuk mengambil gambar')
-                ready < maxReady ? setReady(ready + 200) : !closeCamera ? takePicture() : null
+                //console.log('Good Position')
+                setFaceStatus('Tahan posisi ini wajah sampai tombol aktif.')
+                //ready <= maxReady ? setReady(ready + 200) : setReady(maxReady)
+                setButton(true)
             } else {
-                setFaceStatus('Posisikan wajah sesuai tanda yang tersedia untuk mengambil gambar otomatis.')
-                setReady(0)
+                setFaceStatus('Posisikan wajah sesuai tanda yang tersedia.')
+                setButton(false)
+                //setReady(ready - 200)
             }
         } else {
-            setFaceStatus('Belum Ada')
+            setFaceStatus('Belum Ada wajah terdeteksi')
         }
 
     }, [faceResult])
@@ -62,6 +70,16 @@ const FaceRegistrationScreen = ({ navigation, route }) => {
     React.useEffect(() => {
         hasAndroidPermission()
     }, [])
+
+    /*
+    React.useEffect(() => {
+        if (ready == 900) {
+            setButton(true)
+        } else {
+            setButton(false)
+        }
+    }, [ready])
+    */
 
     async function hasAndroidPermission() {
         const permission = PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE;
@@ -74,38 +92,85 @@ const FaceRegistrationScreen = ({ navigation, route }) => {
         const status = await PermissionsAndroid.request(permission);
         return status === 'granted';
     }
+
     const takePicture = async () => {
         if (cameraRef) {
-            const options = { quality: 1, base64: false, mirrorImage: true, width: 250, height: 250 };
+            const options = { quality: .6, base64: false, mirrorImage: true, width: 720, height: 480 };
             const data = await cameraRef.current.takePictureAsync(options);
-            setImageUri(data)
-            CameraRoll.save(data?.uri, { type: 'photo', album: 'zipay' }).then((res) => uploadModel(res))
+            await setImageUri(data.uri)
             sheetRef.current.snapTo(0)
         }
     };
 
-    async function uploadModel(dir) {
-        await fetchUploadImage('https://f2f60ef9a16d.ngrok.io/api/v1/faces?subject=Tester&det_prob_threshold=0.8', dir)
-        /*
-        const fileToUpload = dir;
-        const data = new FormData();
-        data.append('file', fileToUpload);
-        let res = await fetch(
-            'https://f2f60ef9a16d.ngrok.io/api/v1/faces?subject=Tester&det_prob_threshold=0.8',
-            {
-                method: 'post',
-                body: JSON.stringify(data),
-                headers: {
-                    'Content-Type': 'multipart/form-data; ',
-                    'x-api-key': '1a1ca103-8df6-4543-b082-5cdd71c461f4'
-                },
-            }
-        );
-        let responseJson = await res.json();
-        if (responseJson.status == 1) {
-            alert('Upload Successful');
+    async function checkFace(dir) {
+        setIsLoading(true)
+        setConfirmButton(true)
+        //recognize first
+        const url = `${BASE_URL}api/v1/faces/recognize?limit=0&prediction_count=1&det_prob_threshold=0.8`
+        const uploadStatus = await fetchUploadImage(url, dir)
+        const minAcc = 0.75
+
+        if (uploadStatus.result[0].faces[0].similarity >= minAcc) {
+            setIsLoading(false)
+            setConfirmButton(false)
+            alert(`Wajah kemungkinan sudah terdaftar sebagai ${uploadStatus.result[0].faces[0].face_name}. Jika anda yakin belum terdaftar silahkan ulangi lagi!`)
+        } else {
+            uploadModel(dir)
         }
-        */
+
+        console.log(JSON.stringify(uploadStatus))
+    }
+
+    async function uploadModel(dir) {
+
+        setIsLoading(true)
+        setConfirmButton(true)
+
+        function getUrl() {
+            if (step == 0) {
+                return `${BASE_URL}api/v1/faces?subject=${subject}&det_prob_threshold=0.8`
+            } else {
+                return `${BASE_URL}api/v1/faces/${faceID}/verify?limit=0&det_prob_threshold=0.8`
+            }
+        }
+
+        const url = await getUrl()
+
+        const uploadStatus = await fetchUploadImage(url, dir)
+
+        if (step == 0) {
+            if (uploadStatus !== {}) {
+                alert('Sukses Mendaftarkan Wajah. Lakukan verifikasi untuk menyelesaikan!')
+                setFaceID(uploadStatus.image_id)
+                setStep(step + 1)
+                setIsLoading(false)
+                setConfirmButton(false)
+                sheetRef.current.snapTo(1)
+            } else {
+                alert('Gagal mendaftarkan wajah mohon coba lagi.')
+                setIsLoading(false)
+                setConfirmButton(false)
+                sheetRef.current.snapTo(1)
+            }
+        } else {
+            if (uploadStatus !== {} && uploadStatus?.result[0]?.similarity >= 0.80) {
+                if (step == 1) {
+                    alert('Sukses menverifikasi wajah. Lakukan verifikasi terakhir untuk menyelesaikan.')
+                    setStep(step + 1)
+                    setIsLoading(false)
+                    setConfirmButton(false)
+                    sheetRef.current.snapTo(1)
+                } else if (step == 2) {
+                    alert('Verifikasi selesai. Anda akan diarahkan ke halaman login')
+                    navigation.navigate('Auth')
+                }
+            } else {
+                alert('Wajah gagal diverifikasi mohon ulangi!')
+                setIsLoading(false)
+                setConfirmButton(false)
+                sheetRef.current.snapTo(1)
+            }
+        }
     }
 
     function retryPhoto() {
@@ -113,7 +178,7 @@ const FaceRegistrationScreen = ({ navigation, route }) => {
     }
 
     async function savePhoto() {
-        let name = encodeURIComponent(subject);
+        CameraRoll.save(imageUri, { type: 'photo', album: 'zipay' }).then((res) => step == 0 ? checkFace(res) : uploadModel(res))
     }
 
     const WINDOW_HEIGHT = Dimensions.get('window').height - 100
@@ -128,12 +193,12 @@ const FaceRegistrationScreen = ({ navigation, route }) => {
             }}
         >
             <Title>Konfirmasi Wajah</Title>
-            <Image source={{ uri: imageUri.uri ? imageUri.uri : null }} style={{ height: '50%', width: '80%', marginVertical: 14 }} resizeMode={'contain'} />
-            <Button mode={'text'} style={{ marginTop: 14 }} contentStyle={{ width: 250 }} uppercase={false} onPress={() => retryPhoto()}>
+            <Image source={{ uri: imageUri ? imageUri : null }} style={{ height: '50%', width: '80%', marginVertical: 14 }} resizeMode={'contain'} />
+            <Button disabled={confirmButton} mode={'text'} style={{ marginTop: 14 }} contentStyle={{ width: 250 }} uppercase={false} onPress={() => retryPhoto()}>
                 <Text>Ulangi</Text>
             </Button>
-            <Button mode={'contained'} style={{ marginTop: 14 }} contentStyle={{ width: 250 }} uppercase={false} onPress={() => savePhoto()}>
-                <Text>Konfirmasi</Text>
+            <Button disabled={confirmButton} loading={isLoading} mode={'contained'} style={{ marginTop: 14 }} contentStyle={{ width: 250 }} uppercase={false} onPress={() => savePhoto()}>
+                <Text>{isLoading ? 'Sedang mengunggah...' : 'Konfirmasi'}</Text>
             </Button>
         </View>
     )
@@ -157,7 +222,7 @@ const FaceRegistrationScreen = ({ navigation, route }) => {
                 initialSnap={2}
                 snapPoints={[WINDOW_HEIGHT - (WINDOW_HEIGHT * 5 / 100), 0, 0]}
                 borderRadius={10}
-                enabledGestureInteraction={true}
+                enabledGestureInteraction={false}
                 renderContent={renderContent}
             />
             {
@@ -169,18 +234,17 @@ const FaceRegistrationScreen = ({ navigation, route }) => {
                     captureAudio={false}
                     onFacesDetected={(res) => res ? setFaceResult(res?.faces[0]?.bounds) : setFaceResult(null)}
                     faceDetectionMode={'accurate'}
-                    faceDetectionLandmarks={0}>
+                    faceDetectionLandmarks={RNCamera.Constants.FaceDetection.Landmarks.all}>
                     {/*renderFaceLandmark()*/}
                     <View style={{ position: 'absolute', top: 1, marginTop: Scaler.scaleSize(60), alignItems: 'center' }}>
                         <Image source={FaceLandmark} />
-                        <ProgressBar style={{ width: 100, height: 5, marginTop: 20 }} progress={ready / 900} color={Colors.blueA200} />
                         <Caption style={{ color: 'yellow', marginTop: 12, textAlign: 'center', fontSize: 14, paddingHorizontal: 14 }}>{faceStatus}</Caption>
                     </View>
                     <View style={styles.panel}>
                         <StepView step={stepCaption.length} progress={step} />
                         <Caption style={{ color: 'blue', marginVertical: 8 }}>{stepCaption[step]}</Caption>
-                        <Button mode={'contained'} style={{ marginTop: 8 }} contentStyle={{ width: 250 }} uppercase={false} onPress={() => takePicture()}>
-                            <Text>Snap</Text>
+                        <Button disabled={!button} mode={'contained'} style={{ marginTop: 8 }} contentStyle={{ width: 250 }} uppercase={false} onPress={() => takePicture()}>
+                            <Text>{'Ambil Gambar'}</Text>
                         </Button>
                     </View>
                 </RNCamera>

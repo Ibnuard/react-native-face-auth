@@ -54,19 +54,23 @@ export const fetchMultiApi = async (request = []) => {
     })
 }
 
-export const fetchUploadImage = (url, photo) => {
+export const fetchUploadImage = async (url, photo, callback) => {
     const body = { name: 'file', filename: 'avatar-png.jpeg', type: 'image/jpeg', data: RNFetchBlob.wrap(photo) }
     console.log('Uploading image....')
-    RNFetchBlob.fetch('POST', url, {
+    return await RNFetchBlob.fetch('POST', url, {
         'x-api-key': "1a1ca103-8df6-4543-b082-5cdd71c461f4",
         'Content-Type': 'multipart/form-data',
     }, [body])
+        .uploadProgress((res) => {
+            console.log('upload progress : ' + JSON.stringify(res))
+        })
         .then((resp) => resp.json())
         .then((res) => {
             console.log(JSON.stringify(res))
+            return res
         })
         .catch((err) => {
-            // ...
-            console.log('Res Err: ' + err)
+            console.log(JSON.stringify(err))
+            return err
         })
 }

@@ -8,6 +8,8 @@ import AuthScreen from '../screen/AuthScreen/screen'
 import RegisterScreen from '../screen/RegisterScreen/screen'
 import FaceRegistrationScreen from '../screen/FaceRegistration/screen'
 import FacePreviewModal from '../screen/FacePreviewModal/screen'
+import LoginScreen from '../screen/LoginScreen/screen'
+import FaceLoginScreen from '../screen/FaceLogin/screen'
 
 const Stack = createStackNavigator()
 const RootStack = createStackNavigator()
@@ -38,6 +40,34 @@ export const AppNavigator = () => {
                     animationEnabled: true,
                     animationTypeForReplace: 'push',
                     title: 'Register Screen',
+                    header: (props) => <CustomAppBar {...props} title={opt?.route?.name} />,
+                    headerTitleStyle: {
+                        fontWeight: TextStyle.FONT_WEIGHT_BOLD,
+                    },
+                    headerTitleAlign: 'center',
+                })}
+            />
+            <Stack.Screen
+                name='Login'
+                component={LoginScreen}
+                options={(opt) => ({
+                    animationEnabled: true,
+                    animationTypeForReplace: 'push',
+                    title: 'Login Screen',
+                    header: (props) => <CustomAppBar {...props} title={opt?.route?.name} />,
+                    headerTitleStyle: {
+                        fontWeight: TextStyle.FONT_WEIGHT_BOLD,
+                    },
+                    headerTitleAlign: 'center',
+                })}
+            />
+            <Stack.Screen
+                name='FaceLogin'
+                component={FaceLoginScreen}
+                options={(opt) => ({
+                    animationEnabled: true,
+                    animationTypeForReplace: 'push',
+                    title: 'Face Recognition',
                     header: (props) => <CustomAppBar {...props} title={opt?.route?.name} />,
                     headerTitleStyle: {
                         fontWeight: TextStyle.FONT_WEIGHT_BOLD,
@@ -80,6 +110,7 @@ export const AppNavigator = () => {
                     animationEnabled: true,
                     animationTypeForReplace: 'push',
                     title: 'Profile Screen',
+                    headerShown: false,
                     header: (props) => <CustomAppBar {...props} title={opt?.route?.name} />,
                     headerTitleStyle: {
                         fontWeight: TextStyle.FONT_WEIGHT_REGULAR,
