@@ -122,7 +122,7 @@ const FaceLoginScreen = ({ navigation, route }) => {
                 {/*renderFaceLandmark()*/}
                 <View style={{ position: 'absolute', top: 1, marginTop: Scaler.scaleSize(60), alignItems: 'center' }}>
                     <Image source={FaceLandmark} />
-                    <Caption style={{ color: 'yellow', marginTop: 12, textAlign: 'center', fontSize: 14, paddingHorizontal: 14 }}>{faceStatus}</Caption>
+                    <Caption style={{ color: 'yellow', marginTop: 12, textAlign: 'center', fontSize: 14, paddingHorizontal: 14 }}>{isLoading ? 'Sedang memproses...' : faceStatus}</Caption>
                 </View>
                 {
                     renderLoading()
