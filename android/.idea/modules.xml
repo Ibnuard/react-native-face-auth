@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ArdXBoilerplate.iml" filepath="$PROJECT_DIR$/.idea/modules/ArdXBoilerplate.iml" group="ArdXBoilerplate" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="ArdXBoilerplate/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-863404932/react-native-camera.iml" filepath="$PROJECT_DIR$/.idea/modules/-863404932/react-native-camera.iml" group="ArdXBoilerplate/react-native-camera" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-836956511/react-native-community_cameraroll.iml" filepath="$PROJECT_DIR$/.idea/modules/-836956511/react-native-community_cameraroll.iml" group="ArdXBoilerplate/react-native-community_cameraroll" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/250331870/react-native-community_image-editor.iml" filepath="$PROJECT_DIR$/.idea/modules/250331870/react-native-community_image-editor.iml" group="ArdXBoilerplate/react-native-community_image-editor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1966956856/react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/-1966956856/react-native-community_masked-view.iml" group="ArdXBoilerplate/react-native-community_masked-view" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/363017650/react-native-firebase_app.iml" filepath="$PROJECT_DIR$/.idea/modules/363017650/react-native-firebase_app.iml" group="ArdXBoilerplate/react-native-firebase_app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-898822482/react-native-firebase_ml.iml" filepath="$PROJECT_DIR$/.idea/modules/-898822482/react-native-firebase_ml.iml" group="ArdXBoilerplate/react-native-firebase_ml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/325693860/react-native-fs.iml" filepath="$PROJECT_DIR$/.idea/modules/325693860/react-native-fs.iml" group="ArdXBoilerplate/react-native-fs" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1228228849/react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-1228228849/react-native-gesture-handler.iml" group="ArdXBoilerplate/react-native-gesture-handler" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1074169427/react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/-1074169427/react-native-reanimated.iml" group="ArdXBoilerplate/react-native-reanimated" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1439451064/react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/1439451064/react-native-safe-area-context.iml" group="ArdXBoilerplate/react-native-safe-area-context" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/529755600/react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/529755600/react-native-screens.iml" group="ArdXBoilerplate/react-native-screens" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1207587623/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/1207587623/react-native-vector-icons.iml" group="ArdXBoilerplate/react-native-vector-icons" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/90036464/rn-fetch-blob.iml" filepath="$PROJECT_DIR$/.idea/modules/90036464/rn-fetch-blob.iml" group="ArdXBoilerplate/rn-fetch-blob" />
+    </modules>
+  </component>
+</project>
